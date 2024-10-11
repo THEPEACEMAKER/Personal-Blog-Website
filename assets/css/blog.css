@@ -65,6 +65,7 @@ main .post {
     font-size: 0.9rem;
     color: #777;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .post-excerpt {
