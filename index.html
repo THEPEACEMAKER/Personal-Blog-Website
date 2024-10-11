@@ -6,6 +6,58 @@
     <title>Personal Blog Website</title>
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Awesome Blog</h1>
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Side Section -->
+        <aside>
+            <div class="owner-info">
+                <img src="imgs/plog-owner.jpeg" alt="Blog Owner" class="owner-image">
+                <p>Hello, I'm Adel, a passionate web developer. I love sharing insights on web technologies, frameworks, and best practices for building accessible and responsive web applications.</p>
+            </div>
+            <div class="topics">
+                <button>Javascript</button>
+                <button>React</button>
+                <button>Accessibility</button>
+                <button>CSS</button>
+                <button>Web Performance</button>
+            </div>
+        </aside>
+
+        <!-- Latest Posts Section -->
+        <main>
+            <article class="post">
+                <h2>Understanding Async in Javascript</h2>
+                <div class="post-meta">
+                    <span>Date: 2024-10-10</span>
+                    <span>⏱ 5 min read</span>
+                    <span class="topic-tag">Javascript</span>
+                </div>
+                <p class="post-excerpt">Async programming in JavaScript is crucial for handling asynchronous tasks. This post dives into the core concepts of promises, async/await, and error handling</p>
+            </article>
+
+            <article class="post">
+                <h2>Getting Started with React Hooks</h2>
+                <div class="post-meta">
+                    <span>Date: 2024-10-08</span>
+                    <span>⏱ 3 min read</span>
+                    <span class="topic-tag">React</span>
+                </div>
+                <p class="post-excerpt">React Hooks simplify state management in functional components. Let's explore the basics of useState, useEffect, and custom hooks to optimize your React app</p>
+            </article>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Awesome Blog. All rights reserved.</p>
+    </footer>
 </body>
 </html>
