@@ -1,0 +1,103 @@
+/* Side Section (Owner Info & Topics) */
+aside {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.owner-image {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.owner-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.topics button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.topics button:hover {
+    background-color: #555;
+}
+
+/* Blog Posts Section */
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.post-link:hover .post {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+main .post {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+    aside {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .owner-image {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .owner-info p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .topics {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .post-excerpt {
+        display: none;
+    }
+}
