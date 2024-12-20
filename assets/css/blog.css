@@ -262,3 +262,11 @@ hr {
         text-align: center;
     }
 }
+
+
+@media (max-width: 490px) {
+    /* mobile Design for Post Pages */
+    .social-share {
+        display: none;
+    }
+}
