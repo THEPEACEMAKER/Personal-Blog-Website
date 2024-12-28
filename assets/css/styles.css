@@ -16,6 +16,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Container */
@@ -26,11 +29,13 @@ body {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1;
 }
 
 /* Responsive Design for small screens */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
+        gap: 0rem;
     }
 }

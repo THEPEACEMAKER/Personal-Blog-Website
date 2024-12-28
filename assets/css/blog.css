@@ -33,6 +33,14 @@ aside {
 }
 
 /* Blog Posts Section */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
 .post-link {
     text-decoration: none;
     color: inherit;
@@ -47,7 +55,6 @@ aside {
 main .post {
     background-color: #fff;
     padding: 1.5rem;
-    margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -229,6 +236,10 @@ hr {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
     }
 
     .post-excerpt {
